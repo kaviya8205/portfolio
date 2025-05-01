@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #225581;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            background-color: #2da2b1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #7e1ed2;
+        }
+
+        .portfolio-item p {
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            color: #4d0404;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>My Image Portfolio</h1>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="hari.JPG" alt="Image 1">
+                <p>Image 1 description</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="hari2.JPG" alt="Image 2">
+                <p>Image 2 description</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="kavya1.JPG" alt="Image 3">
+                <p>Image 3 description</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="kavya2.JPG" alt="Image 4">
+                <p>Image 4 description</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="kavya3.JPG" alt="Image 5">
+                <p>Image 5 description</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="vj.JPG." alt="Image 6">
+                <p>Image 6 description</p>
+                <img src="hari.JPG" alt="image 7">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
